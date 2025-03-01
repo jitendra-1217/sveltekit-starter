@@ -1,3 +1,3 @@
-# sveltekit-web-app-starter
+# sveltekit-starter
 
-A starter template for building web applications with SvelteKit.
+A template for building Sveltekit web applications.
