@@ -46,6 +46,7 @@
 	},
 	"dependencies": {
 		"daisyui": "^5.0.0",
-		"lucide-svelte": "^0.477.0"
+		"lucide-svelte": "^0.477.0",
+		"ulid": "^2.3.0"
 	}
 }
