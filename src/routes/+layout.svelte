@@ -19,6 +19,7 @@
 			<div tabindex="0" role="button" class="btn">
 				<selectedNav.icon />{selectedNav.name}<ChevronDown />
 			</div>
+			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<ul tabindex="0" class="menu dropdown-content bg-base-100 z-1 w-3xs shadow-sm">
 				{#each navItems as item}
 					<li>
