@@ -17,13 +17,13 @@
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn">
-				<svelte:component this={selectedNav.icon} />{selectedNav.name}<ChevronDown />
+				<selectedNav.icon />{selectedNav.name}<ChevronDown />
 			</div>
 			<ul tabindex="0" class="menu dropdown-content bg-base-100 z-1 w-3xs shadow-sm">
 				{#each navItems as item}
 					<li>
 						<a href={item.href}>
-							<svelte:component this={item.icon} />
+							<item.icon />
 							{item.name}
 						</a>
 					</li>
