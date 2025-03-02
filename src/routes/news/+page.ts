@@ -11,9 +11,9 @@ export const load: PageLoad = async ({ fetch }) => {
 		}
 
 		const ids = await res.json();
-		const top25 = ids.slice(0, 25);
+		const top10 = ids.slice(0, 10);
 
-		const promises = top25.map((id: number) =>
+		const promises = top10.map((id: number) =>
 			fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then((r) => r.json())
 		);
 
