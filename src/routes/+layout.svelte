@@ -3,6 +3,7 @@
 	import { ChevronDown } from 'lucide-svelte';
 	import { page, navigating } from '$app/state';
 	import { navItems, findActiveNavItem, type NavItem } from '$lib/menus';
+	import Toasts from '$lib/components/Toasts.svelte';
 
 	let { children } = $props();
 
@@ -52,3 +53,5 @@
 <main class="flex-grow">
 	{@render children()}
 </main>
+
+<Toasts />
