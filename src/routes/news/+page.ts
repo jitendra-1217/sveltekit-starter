@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import type { Story } from '$lib/types';
 
 export const load: PageLoad = async ({ fetch }) => {
   try {
@@ -16,11 +17,10 @@ export const load: PageLoad = async ({ fetch }) => {
       fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(r => r.json())
     );
 
-    const stories = await Promise.all(promises);
+    const stories: Story[] = await Promise.all(promises);
 
     return { stories };
-  } catch (err) {
-    console.error('Error:', err);
+  } catch {
     error(500, 'Failed to load stories');
   }
 };
