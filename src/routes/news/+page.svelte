@@ -10,7 +10,7 @@
 </script>
 
 <div class="container mx-auto p-4">
-	<h1 class="text-2xl font-bold mb-4">Hacker News Top 10 Stories</h1>
+	<h1 class="mb-4 text-2xl font-bold">Hacker News Top 15 Stories</h1>
 
 	{#if !data.stories?.length}
 		<div class="alert">No stories found</div>
