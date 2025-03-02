@@ -2,7 +2,7 @@
 
 A template for building Sveltekit web applications.
 
-## Features
+## Stack
 
 - [SvelteKit](https://kit.svelte.dev/) 2.x with TypeScript
 - [Svelte](https://svelte.dev/) 5.x
@@ -12,18 +12,9 @@ A template for building Sveltekit web applications.
 - [Lucide](https://lucide.dev/) icons
 - [ESLint](https://eslint.org/) 9.x for linting
 - [Prettier](https://prettier.io/) 3.x for code formatting
-- Testing setup:
-  - [Vitest](https://vitest.dev/) for unit testing
-  - [Playwright](https://playwright.dev/) for end-to-end testing
-  - [Testing Library](https://testing-library.com/docs/svelte-testing-library/intro/) for component testing
-- NPM scripts for:
-  - Development server
-  - Production build
-  - Preview
-  - Linting
-  - Formatting
-  - Unit testing
-  - E2E testing
+- [Vitest](https://vitest.dev/) for unit testing
+- [Playwright](https://playwright.dev/) for end-to-end testing
+- [Testing Library](https://testing-library.com/docs/svelte-testing-library/intro/) for component testing
 
 ## Development
 
