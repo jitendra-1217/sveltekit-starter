@@ -2,10 +2,10 @@
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @plugin "daisyui" {
-    themes: corporate --default;
+	themes: corporate --default;
 }
 
 .lucide {
-    width: 1rem;
-    height: 1rem;
+	width: 1rem;
+	height: 1rem;
 }

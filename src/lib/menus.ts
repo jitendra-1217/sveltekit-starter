@@ -16,11 +16,11 @@ export const defaultSelectedNav: NavItem = navItems[0];
 
 export function findActiveNavItem(pathname: string): NavItem {
 	if (pathname === '/') {
-		return navItems.find(item => item.href === '/') || defaultSelectedNav;
+		return navItems.find((item) => item.href === '/') || defaultSelectedNav;
 	}
 
 	const matchingItems = navItems
-		.filter(item => item.href !== '/' && pathname.startsWith(item.href))
+		.filter((item) => item.href !== '/' && pathname.startsWith(item.href))
 		.sort((a, b) => b.href.length - a.href.length);
 
 	return matchingItems[0] || defaultSelectedNav;
