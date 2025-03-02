@@ -3,14 +3,10 @@
 	import type { Story } from '$lib/types';
 
 	let { data } = $props<{ data: { stories: Story[] } }>();
-
-	function toTop() {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}
 </script>
 
 <div class="container mx-auto p-4">
-	<h1 class="mb-4 text-2xl font-bold">Hacker News Top 15 Stories</h1>
+	<h1 class="mb-4 text-2xl font-bold">Hacker News Top 5 Stories</h1>
 
 	{#if !data.stories?.length}
 		<div class="alert">No stories found</div>
@@ -53,9 +49,5 @@
 				</li>
 			{/each}
 		</ul>
-
-		<div class="mt-4 flex justify-center">
-			<button class="btn" onclick={toTop}>Back to Top</button>
-		</div>
 	{/if}
 </div>

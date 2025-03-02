@@ -13,7 +13,7 @@
 					href="https://github.com/jitendra-1217/sveltekit-starter/blob/main/README.md"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-primary"
+					class="btn"
 				>
 					View on GitHub
 				</a>

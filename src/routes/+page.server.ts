@@ -8,7 +8,6 @@ interface Quote {
 
 export const load: PageServerLoad = async ({ fetch }) => {
 	try {
-		// Server-side fetch to avoid CORS issues
 		const response = await fetch('https://zenquotes.io/api/random');
 
 		if (!response.ok) {

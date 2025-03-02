@@ -24,7 +24,7 @@
 				<div class="card-body p-4">
 					<h2 class="card-title">Quote of the Day</h2>
 					<div class="flex flex-col gap-2">
-						<p class="font-serif text-xl">{data.quote.q}</p>
+						<p class="font-serif text-2xl">{data.quote.q}</p>
 						<p class="text-sm">{data.quote.a}</p>
 					</div>
 				</div>
